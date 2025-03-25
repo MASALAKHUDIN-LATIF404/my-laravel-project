@@ -1,0 +1,222 @@
+/* @import dan body ini adalah style untuk seluruh FONT di website */
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}*/
+/*
+/*
+/*
+/*
+/* BAGIAN STYLE SELURUH FONT */
+/* @import dan body ini adalah style untuk seluruh FONT di website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* BAGIAN AWAL STYLE SELURUH FONT */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* BAGIAN AKHIR  STYLE SELURUH FONT */
+/*
+/*
+/*
+/* BAGIAN AWAL STYLE NAVBAR */
+/* fungsi NAVBAR ini adalah untuk mengatur jarak antar menu Beranda, Profil, Berita, Prestasi, Galery, Kontak */
+.nav-item .nav-link {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.scroll-nav-active {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ini untuk memberi bayangan poada garis bawah navbar */
+}
+
+.text-nav-active {
+    color: black;
+}
+/* BAGIAN AKHIR STYLE NAVBAR */
+/*
+/*
+/*
+/*
+/* INI AWAL STYLLE UNTUK BAGIAN MENU TITIK 3 DI KANAN ATAS */
+/* Menghapus outline setelah klik */
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+    border: 2px solid rgb(185, 181, 181) !important; 
+    transition: border 0.3s ease-in-out;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Menebalkan garis saat menu sedang aktif */
+.scroll-nav-active .navbar-toggler {
+    border: 2px solid rgb(90, 90, 90) !important; /* Sesuaikan warna dan ketebalan */
+}
+
+/* INI AKHIR STYLLE UNTUK BAGIAN MENU TITIK 3 DI KANAN ATAS */
+/*
+/*
+/*
+/*
+/* BAGIAN AWAL STYLE HERO */
+/* hero ini adalah style untuk foto baground layar beranda web */
+#hero {
+    background-image: url("../images/foto-beranda-webp.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px; /*ini untuk memisahkan foto fitur beranda dengan foto isi di bawahnya */
+}
+
+/* hero-title ini adalah style untuk menurunkan teks selamat datang dari header tas di layar beranda web */
+.hero-title {
+    padding-top: 200px;
+}
+
+/* .hero-text ini adalah fungsi untuk mengatur besaran huruf judul sambutan selamat datang di beranda web*/
+.hero-text {
+    font-size: 40px; /*ini untuk mengatur beasran huruf */
+    font-weight: 550; /*ini untuk mengatur ketebatan huruf */
+}
+
+/* KARYA CHAT GPT */
+/* Ukuran JUDUL = Pondok Pesantren Modern: Cendekiawan, Sinergi Ilmu Dunia dan Ilmu Akhirat lebih kecil untuk LAYAR HP */
+@media (max-width: 768px) {
+    #hero .hero-title h4 { /* h4 ADALLAH TEKS = Pondok Pesantren Modern: Cendekiawan, Sinergi Ilmu Dunia dan Ilmu Akhirat */
+        font-size: 15px;
+    }
+}
+
+/* Ukuran JUDUL = Pondok Pesantren Modern: Cendekiawan, Sinergi Ilmu Dunia dan Ilmu Akhirat lebih besar untuk layar LAPTOP */
+@media (min-width: 1200px) {
+    #hero .hero-title h4 { /* h4 ADALLAH TEKS = Pondok Pesantren Modern: Cendekiawan, Sinergi Ilmu Dunia dan Ilmu Akhirat */
+        font-size: 20px;
+    }
+}
+/* KARYA CHAT GPT */
+
+/* BAGIAN AKHIR STYLE HERO */
+/*
+/*
+/*
+/*
+/* INI ADALAH KOMPONEN BUTTON */
+/* .btn-danger ini adalah style untuk mengedit bentuk tombol register di kanan web web */
+.btn-danger {
+    background-color: #bd0001;
+    border-radius: 10px; /*ini untuk mengatur sisi lengkeung kolom register */
+    border-color: #bd0001;
+    padding: 10px 45px; /*ini untuk mengatur panjangnya kolom register */
+    color: white; /*ini untuk mengatur warna teks register */
+}
+
+/* .btn-outline-danger ini adalah style untuk mengedit bentuk tombol Berita Lainnya di beranda web */
+.btn-outline-danger {
+    background-color: transparent;
+    border-radius: 10px; /*ini untuk mengatur sisi lengkeung kolom register */
+    border-color: #bd0001;
+    padding: 10px 45px; /*ini untuk mengatur panjangnya kolom register */
+    color: #bd0001; /*ini untuk mengatur warna teks register */
+}
+
+/* BAGIAN AKHIR STYLE HERO */
+/*
+/*
+/*
+/*
+/* .stripe INI ADALAH UNTUK STYLE BAGIAN JOIN DAFTAR SANTRI*/
+.stripe {
+    height: 5px;
+    width: 40px;
+    background-color: #bd0001;
+}
+/* INI ADALAH AKHIR UNTUK STYLE BAGIAN JOIN DAFTAR SANTRI*/
+/*
+/*
+/*
+/*
+/* INI ADALAH AWAL  STYLE UNTUK BAGIAN MENU VIDEO { BAGROUND } */
+#video {
+    background-image: url("../images/il-bg-video.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 50px; /* Bisa disesuaikan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Membuat iframe YouTube responsif */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Batasi ukuran maksimal */
+    aspect-ratio: 16 / 9; /* Menjaga rasio aspek */
+    margin: auto;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* INI ADALAH AKHIR STYLE UNTUK BAGIAN MENU VIDEO { BAGROUND } */
+/*
+/*
+/*
+/* INI AWAL ADALAH STYLE UNTUK SECTION FOTO LAINNYA */
+/* AWAL PARALAX BAGROUND */
+.section-foto {
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax {
+    background-image: url("../images/bg-foto-dark-webp.webp");
+}
+
+/* INI ADALAH UNTUK MEMBUAT GARIS STRIP DI SEKAT TULISAN FOTO KEGIATAN LAINNYA */
+.stripe-putih {
+    height: 5px; /* ini tebal garis strip nya */
+    width: 40px; /* ini panjang garis strip nya */
+    background-color: #ffffff;
+    /*margin-bottom: 10px; /* Biar ada jarak antara garis strip dari teks */
+}
+
+/* INI AWAL ADALAH KOMPONEN KOLOM BUTTON FOTO LAINNYA*/
+.btn-outline-white {
+    color: white !important; /* Warna teks putih */
+    border: 1px solid white !important; /* ini adalah untuk membuat kolom foto lainnya dengan ketebalan garis 1 px */
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.btn-outline-white:hover {
+    background-color: white;
+    color: black !important; /* Warna teks hitam saat kursor di arahkan */
+}
+/* INI AKHIR ADALAH STYLE UNTUK SECTION FOTO LAINNYA */
+/*
+/*
+/*
